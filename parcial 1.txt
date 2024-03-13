@@ -1,0 +1,13 @@
+import os
+control = True
+while control == True:
+      os.system ('cls')
+print('\t.:convertidor de temperatura (C) & (F):.')
+temperatura1 = int(input('ingrese la temperatura en numeros enteros \n---->'))
+unidadMedidad1 = input('selecciona la unidad de medida \n[C]celsiusn\[F]Farenheit n\---->')
+if unidadMedidad1 == 'F' or unidadMedidad1 =='f':
+    temperatura2 = ((temperatura1 -32) * 5)/9
+elif unidadMedidad1 == 'C' or unidadMedidad1 =='c':
+    temperatura2 =(((temperatura1 * 9)/5)+32)
+    unidadMedidad1 ='F'
+    
